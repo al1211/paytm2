@@ -3,6 +3,7 @@ import cors from "cors"
 import zod, { core } from "zod"
 import { UserRouter } from "./routes/user.routes.ts";
 import { connectDB } from "./db.ts";
+import jwt from "jsonwebtoken"
 
 const app=express();
 app.use(express.json());
